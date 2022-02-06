@@ -1,0 +1,17 @@
+@keyframes menuline{
+	from {
+		width: 0;
+	}
+	to {
+		width: 40%;
+	}
+}
+
+@keyframes menubackdrop{
+	from {
+		width: 0%;
+	}
+	to {
+		width: 100%;
+	}
+}

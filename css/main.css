@@ -1,0 +1,182 @@
+@keyframes menuline {
+  from {
+    width: 0; }
+  to {
+    width: 40%; } }
+
+@keyframes menubackdrop {
+  from {
+    width: 0%; }
+  to {
+    width: 100%; } }
+
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "Barlow Condensed", sans-serif;
+  line-height: 32px;
+  font-size: 1.8rem;
+  line-height: 3.2rem; }
+
+ul li {
+  list-style-type: none; }
+
+button {
+  border: none;
+  outline: none; }
+
+a {
+  text-decoration: none;
+  color: #FFFFFF; }
+
+.heading-1 {
+  font-family: Bellefair, serif;
+  font-size: 15rem;
+  font-weight: 400; }
+
+.heading-2 {
+  font-family: Barlow Condensed, sans-serif;
+  font-size: 10rem;
+  font-weight: 400; }
+
+.heading-3 {
+  font-family: Barlow Condensed, sans-serif;
+  font-size: 5.6rem;
+  font-weight: 400; }
+
+.heading-4 {
+  font-family: Barlow Condensed, sans-serif;
+  font-size: 3.2rem;
+  font-weight: 400; }
+
+.heading-5 {
+  font-family: Barlow Condensed, sans-serif;
+  font-size: 2.8rem;
+  font-weight: 400; }
+
+.subheading-1 {
+  font-family: Bellefair, serif;
+  font-size: 2.8rem;
+  font-weight: 400; }
+
+.subheading-2 {
+  font-family: Barlow Condensed, sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  letter-spacing: 0.23625px; }
+
+header .header {
+  background: url("../images/home/background-home-desktop.jpg") no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+  overflow: hidden; }
+  header .header .header__menu {
+    display: flex;
+    align-items: center;
+    padding-top: 7rem;
+    padding-left: 5.5rem; }
+    header .header .header__menu .header__menu--logo {
+      width: 4.8rem;
+      height: 4.8rem;
+      background-color: #FFFFFF;
+      border-radius: 50%; }
+    header .header .header__menu .header__menu--list {
+      padding-left: 55rem;
+      position: relative;
+      z-index: 1; }
+      header .header .header__menu .header__menu--list ul {
+        display: flex;
+        align-items: center; }
+        header .header .header__menu .header__menu--list ul:before {
+          content: "";
+          width: 40%;
+          height: .1rem;
+          background: rgba(255, 255, 255, 0.25);
+          position: absolute;
+          left: 4%;
+          animation: menuline 0.5s linear; }
+        header .header .header__menu .header__menu--list ul:after {
+          content: "";
+          height: 9.6rem;
+          background: rgba(255, 255, 255, 0.04);
+          backdrop-filter: blur(81.5485px);
+          position: absolute;
+          display: block;
+          z-index: -1;
+          animation: menubackdrop 1s linear;
+          width: 100%; }
+        header .header .header__menu .header__menu--list ul li {
+          padding: 0 4.8rem;
+          height: 100%; }
+          header .header .header__menu .header__menu--list ul li:nth-child(1) {
+            padding-left: 9.3rem; }
+          header .header .header__menu .header__menu--list ul li a {
+            font-size: 1.6rem;
+            letter-spacing: 0.27rem;
+            text-transform: uppercase;
+            position: relative; }
+            header .header .header__menu .header__menu--list ul li a:after {
+              position: absolute;
+              content: "";
+              width: 0;
+              opacity: 0;
+              background: #FFFFFF;
+              height: .3rem;
+              top: 5.5rem;
+              left: 50%;
+              transition: 0.6s width ease-in-out;
+              transform: translateX(-50%); }
+            header .header .header__menu .header__menu--list ul li a.active:after {
+              width: 100%;
+              opacity: 1; }
+            header .header .header__menu .header__menu--list ul li a:hover:after {
+              width: 100%;
+              opacity: 0.5; }
+            header .header .header__menu .header__menu--list ul li a span {
+              font-weight: 700; }
+  header .header .header__info {
+    display: flex;
+    justify-content: space-between;
+    padding: 20.1rem 16.5rem 25.1rem; }
+    header .header .header__info .header__info-left {
+      width: 45rem; }
+      header .header .header__info .header__info-left .header__info-left--label {
+        padding-bottom: 1.5rem; }
+        header .header .header__info .header__info-left .header__info-left--label p {
+          color: #D0D6F9;
+          letter-spacing: 0.4725rem; }
+      header .header .header__info .header__info-left .header__info-left--heading {
+        padding-bottom: 1.5rem; }
+        header .header .header__info .header__info-left .header__info-left--heading h2 {
+          color: #FFFFFF;
+          line-height: 17.2rem; }
+      header .header .header__info .header__info-left .header__info-left--text p {
+        color: #FFFFFF;
+        font-size: 1.8rem; }
+    header .header .header__info .header__info-right {
+      align-self: flex-end; }
+      header .header .header__info .header__info-right .header__info-right--button button {
+        height: 27.4rem;
+        width: 27.4rem;
+        background: #FFFFFF;
+        border-radius: 50%;
+        font-family: "Bellefair", serif;
+        font-size: 3.2rem;
+        line-height: 3.7rem;
+        letter-spacing: 0.2rem;
+        color: #0B0D17;
+        text-transform: uppercase;
+        cursor: pointer;
+        mix-blend-mode: normal;
+        transition: 0.5s all ease; }
+        header .header .header__info .header__info-right .header__info-right--button button:hover {
+          outline: 8rem solid rgba(255, 255, 255, 0.1); }

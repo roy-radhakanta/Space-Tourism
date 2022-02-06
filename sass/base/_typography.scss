@@ -1,0 +1,33 @@
+a{
+    text-decoration:none;
+    color:$tertiary-color;
+}
+
+.heading-1{
+    @include font-style($font-family-s, '15rem', '400');
+}
+
+.heading-2{
+    @include font-style($font-family-p, '10rem', '400');
+}
+
+.heading-3{
+    @include font-style($font-family-p, '5.6rem', '400');
+}
+
+.heading-4{
+    @include font-style($font-family-p, '3.2rem', '400');
+}
+
+.heading-5{
+    @include font-style($font-family-p, '2.8rem', '400');
+}
+
+.subheading-1{
+    @include font-style($font-family-s, '2.8rem', '400');
+}
+
+.subheading-2{
+    @include font-style($font-family-p, '1.4rem', '400');
+    letter-spacing: 0.23625px;
+}
