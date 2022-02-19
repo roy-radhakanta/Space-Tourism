@@ -3,3 +3,16 @@
     font-size: #{$size};
     font-weight: #{$weight};
 }
+
+@mixin same-background($img-url, $repeat:false, $size){
+    background: url("../images/#{$img-url}");
+    @if $repeat{
+        background-repeat: repeat;
+    }  @else{
+        background-repeat: no-repeat;
+    }    
+    background-size: $size;
+    height: 100vh;
+    background-position: center;
+    overflow: hidden;
+}

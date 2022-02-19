@@ -1,0 +1,65 @@
+.index{
+	@include same-background("home/background-home-desktop.jpg", $repeat:false, "cover");
+
+	    .header__info{
+	   		display: flex;
+	   		justify-content: space-between;
+	   		padding: 20.1rem 16.5rem 25.1rem;
+
+	   		.header__info-left{
+	   			width: 45rem;
+
+	   			.header__info-left--label{
+	   				padding-bottom: 1.5rem;
+
+	   				p{
+	   					color: $secondary-color;
+	   					letter-spacing: 0.4725rem;
+	   				}
+	   			}
+
+	   			.header__info-left--heading{
+	   				padding-bottom: 1.5rem;
+
+	   				h2{
+	   					color: $tertiary-color;
+	   					line-height: 17.2rem;	   					
+	   				}
+	   			}
+
+	   			.header__info-left--text{
+	   				p{
+	   					color: $tertiary-color;
+	   					font-size: 1.8rem;
+	   				}
+	   			}
+	   		}
+
+	   		.header__info-right{
+	   			align-self: flex-end;
+
+	   			.header__info-right--button{
+	   				button{
+	   					height: 27.4rem;
+	   					width: 27.4rem;
+	   					background: $tertiary-color;
+	   					border-radius:50%;
+	   					font-family: $font-family-s;
+	   					font-size: 3.2rem;
+						line-height: 3.7rem;
+						letter-spacing: 0.2rem;
+						color: #0B0D17;
+						text-transform: uppercase;
+						cursor: pointer;
+						mix-blend-mode: normal;
+						transition: 0.5s all ease;
+
+						&:hover{
+							outline: 8rem solid rgba($tertiary-color, 0.1);
+
+						}
+	   				}
+	   			}
+	   		}
+	   }
+}

@@ -1,0 +1,10 @@
+.destination{
+	@include same-background("destination/background-destination-desktop.jpg", $repeat:false, "contain");
+
+
+	.destination__info{
+		&--label{
+			@include font-style($font-family-p, '2.8rem', 400);
+		}
+	}
+}
